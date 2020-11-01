@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+     font-weight: bold;
+    font-size: 75px;
+    font-family: 'Amatic SC', cursive;
+}
+#board {
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.top {
+    margin-top: 20px;
+    margin-left: 160px;
+    display: flex;
+}
+h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.first {
+   
+    background-color: #E3492B;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.second {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #F8C765;
+}
+.slot {
+height: 100px;
+width: 100px;
+overflow: hidden;
+}
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 40px solid #275A53;
+    transform: translate(-30px, -30px);
+
+}
+.player1 {
+    background-color:#E3492B;
+}
+.player2 {
+    background-color: #F8C765;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* opacity or rgba here*/
+    background-color: black;
+    opacity: 0.8;
+}
+.box {
+    padding-top: 15px;
+    height: 200px;
+    width: 300px;
+    background-color: #F5F0E3;
+    left: 200px;
+    top: 200px;
+    position: fixed;
+    text-align: center;  
+}
+button {
+    font-size: 40px;
+    background-color: antiquewhite;
+    border: 2px solid #275A53;
+    padding: 8px 20px;
+    margin-top: 10px; 
+}
+button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
