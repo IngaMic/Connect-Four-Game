@@ -1,5 +1,7 @@
 # Connect-Four-Game
 
+https://ingamic.github.io/Connect-Four-Game/
+
  ### About
 A simple game from my childhood, built with JS, CSS, HTML.
 </br>
